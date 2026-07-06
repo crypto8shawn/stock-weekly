@@ -1,0 +1,7 @@
+yfinance
+finance-datareader
+ta
+mplfinance
+pandas
+scipy
+requests

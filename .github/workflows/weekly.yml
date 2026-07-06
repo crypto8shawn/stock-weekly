@@ -1,0 +1,32 @@
+name: weekly-data-collection
+
+on:
+  schedule:
+    - cron: '30 22 * * 5'   # 매주 토요일 07:30 KST (금 22:30 UTC)
+  workflow_dispatch:         # 수동 실행 허용
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly analysis
+        run: python analyze.py
+
+      - name: Commit results
+        run: |
+          git config user.name "weekly-bot"
+          git config user.email "weekly-bot@users.noreply.github.com"
+          git add -f reports/weekly_analysis.json charts/*.png
+          git commit -m "weekly data $(date -u +%F)" || echo "no changes to commit"
+          git push

@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+config.json
+reports/backtest_*.csv
+charts/test.svg
+.DS_Store
