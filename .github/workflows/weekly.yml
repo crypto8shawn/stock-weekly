@@ -30,3 +30,27 @@ jobs:
           git add -f reports/weekly_analysis.json charts/*.png
           git commit -m "weekly data $(date -u +%F)" || echo "no changes to commit"
           git push
+
+  publish:
+    needs: collect
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest data commit
+        run: git pull --rebase origin main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Publish Notion report
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          PARENT_PAGE_ID: 395197a4-7d61-8168-a75e-c80282dc0866
+        run: python report_builder.py
