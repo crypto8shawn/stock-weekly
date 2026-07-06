@@ -6,6 +6,7 @@
 출력: 상위 페이지 아래 새 주간 리포트 페이지, 표준출력으로 페이지 URL
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -14,7 +15,12 @@ import requests
 BASE = Path(__file__).parent
 API = "https://api.notion.com/v1"
 
-cfg = json.loads((BASE / "config.json").read_text())
+# 설정: config.json 우선, 없으면 환경변수 (GitHub Actions Secrets 대응)
+if (BASE / "config.json").exists():
+    cfg = json.loads((BASE / "config.json").read_text())
+else:
+    cfg = {"notion_token": os.environ["NOTION_TOKEN"],
+           "parent_page_id": os.environ["PARENT_PAGE_ID"]}
 HDR = {
     "Authorization": f"Bearer {cfg['notion_token']}",
     "Notion-Version": "2022-06-28",
@@ -110,7 +116,8 @@ def fmt_close(v, market):
 
 def build():
     data = json.loads((BASE / "reports" / "weekly_analysis.json").read_text())
-    comm = json.loads((BASE / "reports" / "commentary.json").read_text())
+    comm_path = BASE / "reports" / "commentary.json"
+    comm = json.loads(comm_path.read_text()) if comm_path.exists() else {}
     per = comm.get("per_ticker", {})
     stocks = data["stocks"]
     indices = data["indices"]
