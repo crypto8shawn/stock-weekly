@@ -1,50 +1,45 @@
-# 주간 차트분석 루틴 실행 지침 (클라우드 에이전트용)
+# 주간 리포트 발행 지침 (클라우드 에이전트용 v2)
 
-너는 매주 토요일 오전(KST) 실행되는 주간 주식 차트분석 에이전트다. 아래 단계를 순서대로 수행하라.
+전제: 이 저장소(crypto8shawn/stock-weekly)는 이미 작업 환경에 클론되어 있다.
+GitHub Actions가 매주 토요일 07:30 KST에 `reports/weekly_analysis.json`과 `charts/*.png`를
+갱신 커밋해둔 상태다. 너의 역할은 **차트 판독 + Notion 리포트 발행**이다.
 
-## 1. 코드 준비
-Google Drive MCP로 `stock_weekly_cloud` 폴더에서 다음 파일을 읽어 작업 디렉터리에 저장:
-- `analyze.py`, `report_builder.py`, `config.json`, `requirements.txt`
+## 1. 데이터 신선도 확인
+`reports/weekly_analysis.json`의 `indices[0].last_week`가 오늘로부터 8일 이내인지 확인하라.
+오래됐으면 `git pull` 후 재확인하고, 그래도 오래됐으면 Actions 수집이 실패한 것이므로 4단계(실패 보고)로 가라.
 
-## 2. 환경 설정
-```bash
-python3 -m venv venv && ./venv/bin/pip install -q -r requirements.txt
-mkdir -p charts reports
-```
-
-## 3. 데이터 분석 실행
-```bash
-./venv/bin/python analyze.py
-```
-- 산출물: `reports/weekly_analysis.json`, `charts/*.png`
-- 네트워크 오류로 실패하면 60초 후 1회 재시도. 재시도도 실패하면 6단계(실패 보고)로.
-
-## 4. 차트 판독 (핵심 부가가치)
-`reports/weekly_analysis.json`에서 `chart` 필드가 있는 지수·종목의 PNG를 Read 도구로 직접 보고,
-`reports/commentary.json`을 작성하라:
-
-```json
-{
-  "market_overview": "이번 주 양국 시장 총평 3~5문장. 지수 4개 차트를 종합해 추세·과열·전환 신호를 서술",
-  "per_ticker": {"<ticker>": "차트 판독 2~4문장", ...}
-}
-```
+## 2. 차트 판독 (핵심 부가가치)
+JSON에서 `chart` 필드가 있는 지수·종목의 `charts/*.png`를 Read 도구로 직접 보고 판독하라.
 
 판독 원칙:
 - 규칙이 잡은 패턴 후보가 차트에서 실제로 유효한 모양인지 검증하고, 아니면 그렇다고 써라
 - 지지/저항 레벨, 거래량 동반 여부, 이평선 배열·이격을 구체적 수치로 언급
 - 확신 없는 것은 확신 없다고 표현. 과장 금지. 투자 조언이 아닌 차트 사실 기술
+- 지수 4개를 종합한 시황 총평 3~5문장도 작성
 
-## 5. Notion 리포트 발행
-```bash
-./venv/bin/python report_builder.py
-```
-- 성공 시 페이지 URL이 출력된다.
+## 3. Notion 리포트 페이지 생성 (Notion MCP 사용)
+- 상위 페이지 ID: `395197a4-7d61-8168-a75e-c80282dc0866`
+- 제목: `📈 주간 차트분석 리포트 — {last_week}` · 아이콘 📈
 
-## 6. 실패 시 보고
-어느 단계든 복구 불가능하게 실패하면, Notion MCP로 상위 페이지 아래에
-"⚠️ 주간 리포트 실패 — <날짜>" 페이지를 만들고 실패 단계·오류 메시지를 기록하라.
+**차트 이미지 첨부 방법**: 각 차트마다 `notion-create-attachment`를
+`source_url = https://raw.githubusercontent.com/crypto8shawn/stock-weekly/main/charts/{파일명}.png`
+로 호출해 `markdown_source`를 받고, 본문에 `<image src="file-upload://...">` 로 삽입하라.
+
+**페이지 구조 (순서 엄수)**:
+1. 인용구 — 분석 기준(마감 주봉 날짜·대상 수)·전략 요약(시장필터+26주 돌파&트렌드템플릿 진입+13주 저가/데드크로스 청산·Weinstein 스테이지)·"본 리포트는 투자 참고 자료입니다"
+2. `## 📋 매매 신호` — 시장 필터 상태(미국/한국 ✅⛔), ENTRY/EXIT/WATCH 표(신호|종목|종가|청산선|스탑까지 거리|종합점수), 포지션 사이징 문구(계좌 리스크 1% ÷ 스탑 거리), HOLD 종목 나열. 신호 없으면 "이번 주 신규 진입/청산 신호 없음"
+3. `## 🌎 주간 시황 총평` — 판독 기반 3~5문장
+4. `## 📉 지수 동향` — 지수별: 소제목(이름—판정(점수)·주간등락) + 차트 이미지 + 수치표(종가·RSI·20주선·60주선·52주 고가·저가) + 💬 판독
+5. `## 🔍 주목 종목` — chart 있는 종목별: 소제목(이름(티커)—신호·점수·주간등락) + 차트 + 지표 요약 + 패턴 + 신호(스테이지·청산선 포함) + 💬 판독
+6. `## 📊 전 종목 요약` — 표(종목|종가|주간|점수|판정|신호|10/40주|스테이지), 점수 내림차순
+
+숫자 표기: 한국 ₩ 천단위 콤마, 미국 $ 소수 2자리, 주간등락 +x.xx%.
+신호 라벨: ENTRY=🟢 신규 진입, EXIT=🔴 청산, WATCH=🟡 돌파·조건 대기, HOLD=🔵 보유 적합, NEUTRAL=⚪ 관망.
+
+## 4. 실패 보고
+복구 불가능한 실패 시, 상위 페이지 아래 `⚠️ 주간 리포트 실패 — {날짜}` 페이지를 만들어
+실패 단계와 오류 메시지를 기록하라.
 
 ## 주의
-- config.json의 토큰은 외부로 출력하지 마라
-- 데이터가 이상해 보여도(급등락 등) 임의로 수정하지 말고 그대로 보고하되 코멘트에 명시
+- 데이터가 이상해 보여도 임의로 수정하지 말고 그대로 보고하되 코멘트에 명시
+- 로컬 수동 실행 방법(참고): `analyze.py`로 데이터 생성 후 `report_builder.py`(config.json 필요)로 발행
