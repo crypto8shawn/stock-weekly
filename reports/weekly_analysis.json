@@ -5,11 +5,11 @@
       "name": "S&P 500",
       "market": "US",
       "kind": "index",
-      "last_week": "2026-10-09",
-      "close": 7811.54,
-      "week_return_pct": 1.15,
-      "score_total": 3,
-      "verdict": "강세",
+      "last_week": "2026-10-16",
+      "close": 7659.44,
+      "week_return_pct": -1.95,
+      "score_total": 2,
+      "verdict": "중립",
       "signals": {
         "ma": {
           "score": 1,
@@ -20,12 +20,12 @@
           "note": "최근 이평선 교차 없음"
         },
         "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 66 강세 영역(50 상회)"
+          "note": "RSI 57 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -37,7 +37,7 @@
         },
         "pos52": {
           "score": 1,
-          "note": "52주 밴드 상단 98% 위치 (신고가권)"
+          "note": "52주 밴드 상단 88% 위치 (신고가권)"
         }
       },
       "patterns": [
@@ -59,10 +59,10 @@
       "trade": null,
       "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/GSPC_weekly.png",
       "levels": {
-        "SMA20": 7595.06,
-        "SMA60": 7079.49,
-        "SMA120": 6455.14,
-        "RSI": 65.6,
+        "SMA20": 7599.03,
+        "SMA60": 7099.36,
+        "SMA120": 6473.46,
+        "RSI": 57.5,
         "52w_high": 7844.52,
         "52w_low": 6316.91
       }
@@ -72,77 +72,10 @@
       "name": "NASDAQ",
       "market": "US",
       "kind": "index",
-      "last_week": "2026-10-09",
-      "close": 27366.17,
-      "week_return_pct": 0.64,
-      "score_total": 4,
-      "verdict": "강세",
-      "signals": {
-        "ma": {
-          "score": 1,
-          "note": "주가>20주선>60주선 정배열"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 1,
-          "note": "MACD 시그널 상회 + 히스토그램 증가"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 64 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 1,
-          "note": "52주 밴드 상단 95% 위치 (신고가권)"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "쌍바닥",
-          "bottoms": [
-            "2026-06-12",
-            "2026-07-31"
-          ],
-          "neckline": 26788.62,
-          "neckline_broken": true,
-          "status": "2주 전 넥라인 돌파"
-        },
-        {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
-        }
-      ],
-      "trade": null,
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/IXIC_weekly.png",
-      "levels": {
-        "SMA20": 26268.08,
-        "SMA60": 24178.46,
-        "SMA120": 21466.32,
-        "RSI": 64.1,
-        "52w_high": 27722.75,
-        "52w_low": 20690.25
-      }
-    },
-    {
-      "ticker": "KS11",
-      "name": "KOSPI",
-      "market": "KR",
-      "kind": "index",
-      "last_week": "2026-09-18",
-      "close": 6724.34,
-      "week_return_pct": -2.69,
-      "score_total": 1,
+      "last_week": "2026-10-16",
+      "close": 26140.03,
+      "week_return_pct": -4.48,
+      "score_total": 0,
       "verdict": "중립",
       "signals": {
         "ma": {
@@ -154,12 +87,12 @@
           "note": "최근 이평선 교차 없음"
         },
         "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 50 강세 영역(50 상회)"
+          "note": "RSI 53 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -171,19 +104,91 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 56% 위치"
+          "note": "52주 밴드 77% 위치"
         }
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "pattern": "쌍바닥",
+          "bottoms": [
+            "2026-06-12",
+            "2026-07-31"
+          ],
+          "neckline": 26788.62,
+          "neckline_broken": false,
+          "status": "형성 중(넥라인 미돌파, 접근 중)"
+        },
+        {
+          "pattern": "상승쐐기",
+          "signal": "추세 피로 주의(약세 반전형)"
+        }
+      ],
+      "trade": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/IXIC_weekly.png",
+      "levels": {
+        "SMA20": 26226.45,
+        "SMA60": 24255.85,
+        "SMA120": 21536.38,
+        "RSI": 52.6,
+        "52w_high": 27722.75,
+        "52w_low": 20690.25
+      }
+    },
+    {
+      "ticker": "KS11",
+      "name": "KOSPI",
+      "market": "KR",
+      "kind": "index",
+      "last_week": "2026-10-16",
+      "close": 5668.05,
+      "week_return_pct": -14.46,
+      "score_total": -1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 38 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 34% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
       "trade": null,
       "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/KS11_weekly.png",
       "levels": {
-        "SMA20": 7399.69,
-        "SMA60": 5464.18,
-        "SMA120": 4058.01,
-        "RSI": 50.0,
+        "SMA20": 7161.37,
+        "SMA60": 5694.59,
+        "SMA120": 4187.05,
+        "RSI": 37.9,
         "52w_high": 9385.59,
-        "52w_low": 3365.73
+        "52w_low": 3728.38
       }
     },
     {
@@ -191,9 +196,9 @@
       "name": "KOSDAQ",
       "market": "KR",
       "kind": "index",
-      "last_week": "2026-09-18",
-      "close": 821.67,
-      "week_return_pct": 0.13,
+      "last_week": "2026-10-16",
+      "close": 794.78,
+      "week_return_pct": -10.93,
       "score_total": -2,
       "verdict": "중립",
       "signals": {
@@ -211,7 +216,7 @@
         },
         "rsi": {
           "score": 0,
-          "note": "RSI 42 중립~약세 영역"
+          "note": "RSI 41 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -223,16 +228,10 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 32% 위치"
+          "note": "52주 밴드 27% 위치"
         }
       },
       "patterns": [
-        {
-          "pattern": "컵위드핸들",
-          "depth_pct": 28.1,
-          "pivot": 879.29,
-          "status": "피벗 대비 -6.6%"
-        },
         {
           "pattern": "하락쐐기",
           "signal": "다이버전스 미확인"
@@ -241,10 +240,10 @@
       "trade": null,
       "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/KQ11_weekly.png",
       "levels": {
-        "SMA20": 907.41,
-        "SMA60": 949.1,
-        "SMA120": 849.99,
-        "RSI": 41.7,
+        "SMA20": 850.25,
+        "SMA60": 953.28,
+        "SMA120": 850.07,
+        "RSI": 40.6,
         "52w_high": 1229.42,
         "52w_low": 630.99
       }
@@ -256,10 +255,10 @@
       "name": "Apple",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 336.64,
-      "week_return_pct": 0.88,
-      "score_total": 3,
+      "last_week": "2026-10-16",
+      "close": 342.0,
+      "week_return_pct": 1.59,
+      "score_total": 4,
       "verdict": "강세",
       "signals": {
         "ma": {
@@ -271,12 +270,12 @@
           "note": "최근 이평선 교차 없음"
         },
         "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
+          "score": 1,
+          "note": "MACD 시그널 상회 + 히스토그램 증가"
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 64 강세 영역(50 상회)"
+          "note": "RSI 65 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -288,28 +287,33 @@
         },
         "pos52": {
           "score": 1,
-          "note": "52주 밴드 상단 92% 위치 (신고가권)"
+          "note": "52주 밴드 상단 94% 위치 (신고가권)"
         }
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "pattern": "상승쐐기",
+          "signal": "추세 피로 주의(약세 반전형)"
+        }
+      ],
       "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
+        "status": "ENTRY",
+        "note": "신규 진입 신호: 26주 신고가 돌파 + 시장 필터 + 트렌드 템플릿 통과",
         "stop_13w": 305.93,
-        "risk_to_stop_pct": 9.12,
+        "risk_to_stop_pct": 10.55,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
         "stage": 2,
         "stage_label": "스테이지2 상승"
       },
-      "chart": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/AAPL_weekly.png",
       "levels": {
-        "SMA20": 316.85,
-        "SMA60": 280.49,
-        "SMA120": 250.54,
-        "RSI": 63.6,
-        "52w_high": 345.34,
+        "SMA20": 318.36,
+        "SMA60": 282.41,
+        "SMA120": 251.65,
+        "RSI": 65.4,
+        "52w_high": 348.15,
         "52w_low": 242.76
       }
     },
@@ -318,9 +322,9 @@
       "name": "Microsoft",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 535.07,
-      "week_return_pct": 3.39,
+      "last_week": "2026-10-16",
+      "close": 539.44,
+      "week_return_pct": 0.82,
       "score_total": 4,
       "verdict": "강세",
       "signals": {
@@ -350,7 +354,7 @@
         },
         "pos52": {
           "score": 1,
-          "note": "52주 밴드 상단 93% 위치 (신고가권)"
+          "note": "52주 밴드 상단 94% 위치 (신고가권)"
         }
       },
       "patterns": [
@@ -363,7 +367,7 @@
         "status": "HOLD",
         "note": "추세 지속 — 보유 적합 구간",
         "stop_13w": 380.98,
-        "risk_to_stop_pct": 28.8,
+        "risk_to_stop_pct": 29.37,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
@@ -372,11 +376,11 @@
       },
       "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/MSFT_weekly.png",
       "levels": {
-        "SMA20": 453.32,
-        "SMA60": 453.27,
-        "SMA120": 441.13,
-        "RSI": 67.6,
-        "52w_high": 549.2,
+        "SMA20": 457.83,
+        "SMA60": 453.88,
+        "SMA120": 441.97,
+        "RSI": 68.3,
+        "52w_high": 551.15,
         "52w_low": 348.54
       }
     },
@@ -385,11 +389,11 @@
       "name": "NVIDIA",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 229.28,
-      "week_return_pct": -2.0,
-      "score_total": 3,
-      "verdict": "강세",
+      "last_week": "2026-10-16",
+      "close": 217.23,
+      "week_return_pct": -5.26,
+      "score_total": 1,
+      "verdict": "중립",
       "signals": {
         "ma": {
           "score": 1,
@@ -400,12 +404,12 @@
           "note": "최근 이평선 교차 없음"
         },
         "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 59 강세 영역(50 상회)"
+          "note": "RSI 53 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -416,8 +420,8 @@
           "note": "거래량 평이"
         },
         "pos52": {
-          "score": 1,
-          "note": "52주 밴드 상단 82% 위치 (신고가권)"
+          "score": 0,
+          "note": "52주 밴드 67% 위치"
         }
       },
       "patterns": [
@@ -430,7 +434,7 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 200.53,
-        "risk_to_stop_pct": 12.54,
+        "risk_to_stop_pct": 7.69,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
@@ -439,10 +443,10 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 213.88,
-        "SMA60": 195.34,
-        "SMA120": 163.84,
-        "RSI": 58.9,
+        "SMA20": 214.21,
+        "SMA60": 196.0,
+        "SMA120": 164.62,
+        "RSI": 52.6,
         "52w_high": 243.37,
         "52w_low": 163.9
       }
@@ -452,9 +456,9 @@
       "name": "Alphabet",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 351.66,
-      "week_return_pct": 2.38,
+      "last_week": "2026-10-16",
+      "close": 349.22,
+      "week_return_pct": -0.69,
       "score_total": 2,
       "verdict": "중립",
       "signals": {
@@ -472,7 +476,7 @@
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 54 강세 영역(50 상회)"
+          "note": "RSI 53 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -484,7 +488,7 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 67% 위치"
+          "note": "52주 밴드 64% 위치"
         }
       },
       "patterns": [
@@ -507,21 +511,21 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 319.53,
-        "risk_to_stop_pct": 9.14,
+        "risk_to_stop_pct": 8.5,
         "trend_10_40": "골든",
         "market_filter": true,
-        "template": true,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
+        "template": false,
+        "stage": 1,
+        "stage_label": "스테이지1 바닥권"
       },
       "chart": null,
       "levels": {
-        "SMA20": 350.36,
-        "SMA60": 316.97,
-        "SMA120": 245.07,
-        "RSI": 53.8,
+        "SMA20": 348.83,
+        "SMA60": 319.37,
+        "SMA120": 246.48,
+        "RSI": 52.8,
         "52w_high": 408.1,
-        "52w_low": 239.09
+        "52w_low": 243.52
       }
     },
     {
@@ -529,10 +533,10 @@
       "name": "Amazon",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 262.43,
-      "week_return_pct": 4.34,
-      "score_total": 2,
+      "last_week": "2026-10-16",
+      "close": 254.76,
+      "week_return_pct": -2.92,
+      "score_total": 1,
       "verdict": "중립",
       "signals": {
         "ma": {
@@ -544,237 +548,8 @@
           "note": "최근 이평선 교차 없음"
         },
         "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 56 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 73% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "삼중바닥",
-          "bottoms": [
-            "2026-06-26",
-            "2026-07-31"
-          ],
-          "neckline": 273.23,
-          "neckline_broken": false,
-          "status": "형성 중(넥라인 미돌파, 접근 중)"
-        },
-        {
-          "pattern": "컵위드핸들",
-          "depth_pct": 17.9,
-          "pivot": 287.2,
-          "status": "피벗 대비 -8.6%"
-        },
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 232.11,
-        "risk_to_stop_pct": 11.55,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": true,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 253.3,
-        "SMA60": 238.03,
-        "SMA120": 220.57,
-        "RSI": 55.7,
-        "52w_high": 287.2,
-        "52w_low": 196.0
-      }
-    },
-    {
-      "ticker": "META",
-      "name": "Meta",
-      "market": "US",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 718.67,
-      "week_return_pct": -1.29,
-      "score_total": 1,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 60 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 77% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "삼중바닥",
-          "bottoms": [
-            "2026-06-26",
-            "2026-07-31"
-          ],
-          "neckline": 685.54,
-          "neckline_broken": true,
-          "status": "2주 전 넥라인 돌파"
-        },
-        {
-          "pattern": "컵위드핸들",
-          "depth_pct": 34.5,
-          "pivot": 779.82,
-          "status": "피벗 대비 -7.8%"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 549.47,
-        "risk_to_stop_pct": 23.54,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": true,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 619.95,
-        "SMA60": 646.22,
-        "SMA120": 624.44,
-        "RSI": 59.8,
-        "52w_high": 779.82,
-        "52w_low": 519.37
-      }
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom",
-      "market": "US",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 361.54,
-      "week_return_pct": 1.8,
-      "score_total": 0,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 48 중립~약세 영역"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 36% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 352.81,
-        "risk_to_stop_pct": 2.41,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": false,
-        "stage": 1,
-        "stage_label": "스테이지1 바닥권"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 379.2,
-        "SMA60": 359.25,
-        "SMA120": 280.64,
-        "RSI": 47.9,
-        "52w_high": 493.32,
-        "52w_low": 288.98
-      }
-    },
-    {
-      "ticker": "TSLA",
-      "name": "Tesla",
-      "market": "US",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 382.7,
-      "week_return_pct": 3.27,
-      "score_total": 2,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 1,
-          "note": "MACD 시그널 상회 + 히스토그램 증가"
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
           "score": 1,
@@ -790,7 +565,246 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 42% 위치"
+          "note": "52주 밴드 64% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "삼중바닥",
+          "bottoms": [
+            "2026-06-26",
+            "2026-07-31"
+          ],
+          "neckline": 273.23,
+          "neckline_broken": false,
+          "status": "형성 중(넥라인 미돌파, 접근 중)"
+        },
+        {
+          "pattern": "컵위드핸들",
+          "depth_pct": 21.8,
+          "pivot": 287.2,
+          "status": "피벗 대비 -11.3%"
+        },
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 232.11,
+        "risk_to_stop_pct": 8.89,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": true,
+        "stage": 2,
+        "stage_label": "스테이지2 상승"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 252.51,
+        "SMA60": 238.46,
+        "SMA120": 221.09,
+        "RSI": 51.9,
+        "52w_high": 287.2,
+        "52w_low": 196.0
+      }
+    },
+    {
+      "ticker": "META",
+      "name": "Meta",
+      "market": "US",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 736.72,
+      "week_return_pct": 2.51,
+      "score_total": 3,
+      "verdict": "강세",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": 1,
+          "note": "MACD 시그널 상회 + 히스토그램 증가"
+        },
+        "rsi": {
+          "score": 1,
+          "note": "RSI 61 강세 영역(50 상회)"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 1,
+          "note": "52주 밴드 상단 83% 위치 (신고가권)"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "삼중바닥",
+          "bottoms": [
+            "2026-06-26",
+            "2026-07-31"
+          ],
+          "neckline": 685.54,
+          "neckline_broken": true,
+          "status": "3주 전 넥라인 돌파"
+        },
+        {
+          "pattern": "컵위드핸들",
+          "depth_pct": 34.5,
+          "pivot": 779.82,
+          "status": "피벗 대비 -5.5%"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 549.47,
+        "risk_to_stop_pct": 25.42,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": true,
+        "stage": 2,
+        "stage_label": "스테이지2 상승"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 625.22,
+        "SMA60": 645.97,
+        "SMA120": 626.41,
+        "RSI": 61.5,
+        "52w_high": 779.82,
+        "52w_low": 519.37
+      }
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "market": "US",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 344.33,
+      "week_return_pct": -4.76,
+      "score_total": -1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 44 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 스퀴즈(변동성 응축) — 방향 분출 대기"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 27% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "쌍바닥",
+          "bottoms": [
+            "2026-02-06",
+            "2026-04-03"
+          ],
+          "neckline": 351.2,
+          "neckline_broken": false,
+          "status": "형성 중(넥라인 미돌파, 접근 중)"
+        },
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
+      "trade": {
+        "status": "EXIT",
+        "note": "청산 신호: 13주 저가 이탈",
+        "stop_13w": 352.81,
+        "risk_to_stop_pct": -2.46,
+        "trend_10_40": "데드",
+        "market_filter": true,
+        "template": false,
+        "stage": 1,
+        "stage_label": "스테이지1 바닥권"
+      },
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/AVGO_weekly.png",
+      "levels": {
+        "SMA20": 374.15,
+        "SMA60": 360.13,
+        "SMA120": 282.2,
+        "RSI": 44.0,
+        "52w_high": 493.32,
+        "52w_low": 288.98
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "market": "US",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 362.44,
+      "week_return_pct": -5.29,
+      "score_total": -1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": -1,
+          "note": "주가<20주선<60주선 역배열"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": 0,
+          "note": "MACD 중립/전환 구간"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 47 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 32% 위치"
         }
       },
       "patterns": [
@@ -803,19 +817,19 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 311.21,
-        "risk_to_stop_pct": 18.68,
+        "risk_to_stop_pct": 14.13,
         "trend_10_40": "데드",
         "market_filter": true,
         "template": false,
-        "stage": 3,
-        "stage_label": "스테이지3 천장권"
+        "stage": 4,
+        "stage_label": "스테이지4 하락"
       },
       "chart": null,
       "levels": {
-        "SMA20": 370.57,
-        "SMA60": 398.52,
-        "SMA120": 348.75,
-        "RSI": 52.2,
+        "SMA20": 366.9,
+        "SMA60": 398.9,
+        "SMA120": 350.12,
+        "RSI": 47.1,
         "52w_high": 498.83,
         "52w_low": 297.38
       }
@@ -825,9 +839,9 @@
       "name": "Berkshire",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 515.62,
-      "week_return_pct": 2.58,
+      "last_week": "2026-10-16",
+      "close": 525.68,
+      "week_return_pct": 1.95,
       "score_total": 4,
       "verdict": "강세",
       "signals": {
@@ -836,8 +850,8 @@
           "note": "주가>20주선>60주선 정배열"
         },
         "cross": {
-          "score": 1,
-          "note": "최근 8주 내 20/60주선 골든크로스"
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
         },
         "macd": {
           "score": 1,
@@ -845,27 +859,38 @@
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 59 강세 영역(50 상회)"
+          "note": "RSI 63 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
-          "note": "밴드 내 정상 범위"
+          "note": "볼린저 상단 돌파(강한 추세 or 단기과열)"
         },
         "vol": {
           "score": 0,
           "note": "거래량 평이"
         },
         "pos52": {
-          "score": 0,
-          "note": "52주 밴드 70% 위치"
+          "score": 1,
+          "note": "52주 밴드 상단 84% 위치 (신고가권)"
         }
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "pattern": "삼중바닥",
+          "bottoms": [
+            "2026-07-24",
+            "2026-10-02"
+          ],
+          "neckline": 537.74,
+          "neckline_broken": false,
+          "status": "형성 중(넥라인 미돌파, 접근 중)"
+        }
+      ],
       "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
+        "status": "WATCH",
+        "note": "26주 신고가 돌파했으나 트렌드 템플릿 미충족(30주선/52주 위치) — 진입 보류",
         "stop_13w": 490.91,
-        "risk_to_stop_pct": 4.79,
+        "risk_to_stop_pct": 6.61,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
@@ -874,10 +899,10 @@
       },
       "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/BRK-B_weekly.png",
       "levels": {
-        "SMA20": 500.77,
-        "SMA60": 494.69,
-        "SMA120": 484.18,
-        "RSI": 58.5,
+        "SMA20": 503.33,
+        "SMA60": 495.3,
+        "SMA120": 485.17,
+        "RSI": 62.6,
         "52w_high": 537.74,
         "52w_low": 464.01
       }
@@ -887,11 +912,11 @@
       "name": "EliLilly",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 1179.27,
-      "week_return_pct": 3.19,
-      "score_total": 2,
-      "verdict": "중립",
+      "last_week": "2026-10-16",
+      "close": 1251.61,
+      "week_return_pct": 6.13,
+      "score_total": 3,
+      "verdict": "강세",
       "signals": {
         "ma": {
           "score": 1,
@@ -907,7 +932,7 @@
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 56 강세 영역(50 상회)"
+          "note": "RSI 62 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -918,8 +943,8 @@
           "note": "거래량 평이"
         },
         "pos52": {
-          "score": 0,
-          "note": "52주 밴드 78% 위치"
+          "score": 1,
+          "note": "52주 밴드 상단 92% 위치 (신고가권)"
         }
       },
       "patterns": [
@@ -942,7 +967,7 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 1115.7,
-        "risk_to_stop_pct": 5.39,
+        "risk_to_stop_pct": 10.86,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
@@ -951,12 +976,12 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 1165.19,
-        "SMA60": 1014.13,
-        "SMA120": 914.1,
-        "RSI": 56.1,
+        "SMA20": 1172.6,
+        "SMA60": 1023.2,
+        "SMA120": 917.1,
+        "RSI": 61.8,
         "52w_high": 1292.65,
-        "52w_low": 778.94
+        "52w_low": 788.84
       }
     },
     {
@@ -964,9 +989,9 @@
       "name": "JPMorgan",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 332.99,
-      "week_return_pct": 0.68,
+      "last_week": "2026-10-16",
+      "close": 335.53,
+      "week_return_pct": 0.76,
       "score_total": 0,
       "verdict": "중립",
       "signals": {
@@ -984,7 +1009,7 @@
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 51 강세 영역(50 상회)"
+          "note": "RSI 52 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -996,7 +1021,7 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 65% 위치"
+          "note": "52주 밴드 67% 위치"
         }
       },
       "patterns": [],
@@ -1004,7 +1029,7 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 330.73,
-        "risk_to_stop_pct": 0.68,
+        "risk_to_stop_pct": 1.43,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
@@ -1013,10 +1038,10 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 338.28,
-        "SMA60": 313.5,
-        "SMA120": 274.62,
-        "RSI": 50.7,
+        "SMA20": 340.23,
+        "SMA60": 314.27,
+        "SMA120": 275.81,
+        "RSI": 52.2,
         "52w_high": 364.68,
         "52w_low": 275.06
       }
@@ -1026,9 +1051,153 @@
       "name": "Visa",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 385.45,
-      "week_return_pct": 6.87,
+      "last_week": "2026-10-16",
+      "close": 399.75,
+      "week_return_pct": 3.71,
+      "score_total": 4,
+      "verdict": "강세",
+      "signals": {
+        "ma": {
+          "score": 1,
+          "note": "주가>20주선>60주선 정배열"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": 1,
+          "note": "MACD 시그널 상회 + 히스토그램 증가"
+        },
+        "rsi": {
+          "score": 1,
+          "note": "RSI 70 강세 영역(50 상회)"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 1,
+          "note": "52주 밴드 상단 97% 위치 (신고가권)"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "상승쐐기",
+          "signal": "추세 피로 주의(약세 반전형)"
+        }
+      ],
+      "trade": {
+        "status": "HOLD",
+        "note": "추세 지속 — 보유 적합 구간",
+        "stop_13w": 355.08,
+        "risk_to_stop_pct": 11.17,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": true,
+        "stage": 2,
+        "stage_label": "스테이지2 상승"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 360.04,
+        "SMA60": 338.6,
+        "SMA120": 326.69,
+        "RSI": 69.9,
+        "52w_high": 403.21,
+        "52w_low": 292.74
+      }
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart",
+      "market": "US",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 117.87,
+      "week_return_pct": 5.86,
+      "score_total": 1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": -1,
+          "note": "최근 8주 내 20/60주선 데드크로스"
+        },
+        "macd": {
+          "score": 1,
+          "note": "MACD 시그널 상회 + 히스토그램 증가"
+        },
+        "rsi": {
+          "score": 1,
+          "note": "RSI 56 강세 영역(50 상회)"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 54% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "삼중바닥",
+          "bottoms": [
+            "2026-07-24",
+            "2026-08-21"
+          ],
+          "neckline": 116.59,
+          "neckline_broken": true,
+          "status": "0주 전 넥라인 돌파"
+        },
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 103.09,
+        "risk_to_stop_pct": 12.54,
+        "trend_10_40": "데드",
+        "market_filter": true,
+        "template": false,
+        "stage": 3,
+        "stage_label": "스테이지3 천장권"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 111.34,
+        "SMA60": 113.9,
+        "SMA120": 100.71,
+        "RSI": 55.9,
+        "52w_high": 134.84,
+        "52w_low": 98.05
+      }
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "market": "US",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 174.68,
+      "week_return_pct": 3.4,
       "score_total": 4,
       "verdict": "강세",
       "signals": {
@@ -1058,151 +1227,7 @@
         },
         "pos52": {
           "score": 1,
-          "note": "52주 밴드 상단 99% 위치 (신고가권)"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
-        }
-      ],
-      "trade": {
-        "status": "ENTRY",
-        "note": "신규 진입 신호: 26주 신고가 돌파 + 시장 필터 + 트렌드 템플릿 통과",
-        "stop_13w": 348.32,
-        "risk_to_stop_pct": 9.63,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": true,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
-      },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/V_weekly.png",
-      "levels": {
-        "SMA20": 356.34,
-        "SMA60": 337.73,
-        "SMA120": 325.5,
-        "RSI": 65.7,
-        "52w_high": 386.84,
-        "52w_low": 292.74
-      }
-    },
-    {
-      "ticker": "WMT",
-      "name": "Walmart",
-      "market": "US",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 111.35,
-      "week_return_pct": 6.8,
-      "score_total": -1,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": -1,
-          "note": "최근 8주 내 20/60주선 데드크로스"
-        },
-        "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 49 중립~약세 영역"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 36% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "삼중바닥",
-          "bottoms": [
-            "2026-07-24",
-            "2026-08-21"
-          ],
-          "neckline": 116.59,
-          "neckline_broken": false,
-          "status": "형성 중(넥라인 미돌파, 접근 중)"
-        },
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 103.09,
-        "risk_to_stop_pct": 7.42,
-        "trend_10_40": "데드",
-        "market_filter": true,
-        "template": false,
-        "stage": 4,
-        "stage_label": "스테이지4 하락"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 111.22,
-        "SMA60": 113.53,
-        "SMA120": 100.28,
-        "RSI": 49.0,
-        "52w_high": 134.84,
-        "52w_low": 98.05
-      }
-    },
-    {
-      "ticker": "XOM",
-      "name": "ExxonMobil",
-      "market": "US",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 168.94,
-      "week_return_pct": 3.01,
-      "score_total": 4,
-      "verdict": "강세",
-      "signals": {
-        "ma": {
-          "score": 1,
-          "note": "주가>20주선>60주선 정배열"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 1,
-          "note": "MACD 시그널 상회 + 히스토그램 증가"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 63 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 1,
-          "note": "52주 밴드 상단 92% 위치 (신고가권)"
+          "note": "52주 밴드 상단 94% 위치 (신고가권)"
         }
       },
       "patterns": [
@@ -1214,7 +1239,7 @@
           ],
           "neckline": 162.63,
           "neckline_broken": true,
-          "status": "7주 전 넥라인 돌파"
+          "status": "8주 전 넥라인 돌파"
         },
         {
           "pattern": "상승쐐기",
@@ -1222,24 +1247,24 @@
         }
       ],
       "trade": {
-        "status": "ENTRY",
-        "note": "신규 진입 신호: 26주 신고가 돌파 + 시장 필터 + 트렌드 템플릿 통과",
-        "stop_13w": 137.99,
-        "risk_to_stop_pct": 18.32,
+        "status": "HOLD",
+        "note": "추세 지속 — 보유 적합 구간",
+        "stop_13w": 146.41,
+        "risk_to_stop_pct": 16.18,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
         "stage": 2,
         "stage_label": "스테이지2 상승"
       },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/XOM_weekly.png",
+      "chart": null,
       "levels": {
-        "SMA20": 152.92,
-        "SMA60": 137.52,
-        "SMA120": 121.94,
-        "RSI": 62.8,
-        "52w_high": 174.09,
-        "52w_low": 107.28
+        "SMA20": 154.44,
+        "SMA60": 138.63,
+        "SMA120": 122.5,
+        "RSI": 65.9,
+        "52w_high": 178.69,
+        "52w_low": 108.83
       }
     },
     {
@@ -1247,15 +1272,15 @@
       "name": "UnitedHealth",
       "market": "US",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 379.3,
-      "week_return_pct": 1.99,
-      "score_total": 1,
+      "last_week": "2026-10-16",
+      "close": 406.67,
+      "week_return_pct": 7.22,
+      "score_total": 2,
       "verdict": "중립",
       "signals": {
         "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
+          "score": 1,
+          "note": "주가>20주선>60주선 정배열"
         },
         "cross": {
           "score": 0,
@@ -1267,7 +1292,7 @@
         },
         "rsi": {
           "score": 1,
-          "note": "RSI 51 강세 영역(50 상회)"
+          "note": "RSI 61 강세 영역(50 상회)"
         },
         "bb": {
           "score": 0,
@@ -1279,10 +1304,20 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 61% 위치"
+          "note": "52주 밴드 75% 위치"
         }
       },
       "patterns": [
+        {
+          "pattern": "쌍바닥",
+          "bottoms": [
+            "2026-06-05",
+            "2026-10-02"
+          ],
+          "neckline": 458.79,
+          "neckline_broken": false,
+          "status": "형성 중(넥라인 미돌파, 접근 중)"
+        },
         {
           "pattern": "상승쐐기",
           "signal": "추세 피로 주의(약세 반전형)"
@@ -1292,7 +1327,7 @@
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
         "stop_13w": 371.9,
-        "risk_to_stop_pct": 1.95,
+        "risk_to_stop_pct": 8.55,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": true,
@@ -1301,10 +1336,10 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 397.73,
-        "SMA60": 345.97,
-        "SMA120": 402.2,
-        "RSI": 50.7,
+        "SMA20": 399.28,
+        "SMA60": 347.78,
+        "SMA120": 401.56,
+        "RSI": 60.7,
         "52w_high": 458.79,
         "52w_low": 252.96
       }
@@ -1314,10 +1349,10 @@
       "name": "삼성전자",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 263000.0,
-      "week_return_pct": -4.71,
-      "score_total": 0,
+      "last_week": "2026-10-16",
+      "close": 217000.0,
+      "week_return_pct": -17.49,
+      "score_total": -1,
       "verdict": "중립",
       "signals": {
         "ma": {
@@ -1333,8 +1368,8 @@
           "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
-          "score": 1,
-          "note": "RSI 52 강세 영역(50 상회)"
+          "score": 0,
+          "note": "RSI 42 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -1346,29 +1381,34 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 61% 위치"
+          "note": "52주 밴드 44% 위치"
         }
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
       "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
+        "status": "EXIT",
+        "note": "청산 신호: 13주 저가 이탈",
         "stop_13w": 231000.0,
-        "risk_to_stop_pct": 12.17,
+        "risk_to_stop_pct": -6.45,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
         "stage": 1,
         "stage_label": "스테이지1 바닥권"
       },
-      "chart": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/005930_weekly.png",
       "levels": {
-        "SMA20": 283400.0,
-        "SMA60": 192358.33,
-        "SMA120": 127228.33,
-        "RSI": 51.9,
+        "SMA20": 278400.0,
+        "SMA60": 194785.0,
+        "SMA120": 128357.5,
+        "RSI": 42.2,
         "52w_high": 374500.0,
-        "52w_low": 90200.0
+        "52w_low": 94500.0
       }
     },
     {
@@ -1376,10 +1416,10 @@
       "name": "SK하이닉스",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 1686000.0,
-      "week_return_pct": -8.47,
-      "score_total": 0,
+      "last_week": "2026-10-16",
+      "close": 1265000.0,
+      "week_return_pct": -24.97,
+      "score_total": -1,
       "verdict": "중립",
       "signals": {
         "ma": {
@@ -1395,8 +1435,8 @@
           "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
-          "score": 1,
-          "note": "RSI 50 강세 영역(50 상회)"
+          "score": 0,
+          "note": "RSI 40 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -1408,34 +1448,34 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 50% 위치"
+          "note": "52주 밴드 32% 위치"
         }
       },
       "patterns": [
         {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
         }
       ],
       "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
+        "status": "EXIT",
+        "note": "청산 신호: 13주 저가 이탈",
         "stop_13w": 1422000.0,
-        "risk_to_stop_pct": 15.66,
+        "risk_to_stop_pct": -12.41,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
         "stage": 1,
         "stage_label": "스테이지1 바닥권"
       },
-      "chart": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/000660_weekly.png",
       "levels": {
-        "SMA20": 1953150.0,
-        "SMA60": 1166908.33,
-        "SMA120": 685504.17,
-        "RSI": 50.2,
+        "SMA20": 1899750.0,
+        "SMA60": 1183808.33,
+        "SMA120": 694075.0,
+        "RSI": 40.2,
         "52w_high": 2987000.0,
-        "52w_low": 403000.0
+        "52w_low": 465500.0
       }
     },
     {
@@ -1443,10 +1483,10 @@
       "name": "SK스퀘어",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 1059000.0,
-      "week_return_pct": -8.39,
-      "score_total": 0,
+      "last_week": "2026-10-16",
+      "close": 782000.0,
+      "week_return_pct": -26.16,
+      "score_total": -1,
       "verdict": "중립",
       "signals": {
         "ma": {
@@ -1462,8 +1502,8 @@
           "note": "MACD 시그널 하회 + 히스토그램 감소"
         },
         "rsi": {
-          "score": 1,
-          "note": "RSI 50 강세 영역(50 상회)"
+          "score": 0,
+          "note": "RSI 40 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -1475,46 +1515,46 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 42% 위치"
+          "note": "52주 밴드 28% 위치"
         }
       },
       "patterns": [
         {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
         }
       ],
       "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
+        "status": "EXIT",
+        "note": "청산 신호: 13주 저가 이탈",
         "stop_13w": 939000.0,
-        "risk_to_stop_pct": 11.33,
+        "risk_to_stop_pct": -20.08,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
         "stage": 1,
         "stage_label": "스테이지1 바닥권"
       },
-      "chart": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/402340_weekly.png",
       "levels": {
-        "SMA20": 1227400.0,
-        "SMA60": 712285.0,
-        "SMA120": 406403.33,
-        "RSI": 50.5,
+        "SMA20": 1204850.0,
+        "SMA60": 723065.0,
+        "SMA120": 412086.67,
+        "RSI": 40.4,
         "52w_high": 2189000.0,
-        "52w_low": 229500.0
+        "52w_low": 241000.0
       }
     },
     {
-      "ticker": "009150",
-      "name": "삼성전기",
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 1559000.0,
-      "week_return_pct": -1.14,
-      "score_total": 1,
-      "verdict": "중립",
+      "last_week": "2026-10-16",
+      "close": 403500.0,
+      "week_return_pct": 0.12,
+      "score_total": 3,
+      "verdict": "강세",
       "signals": {
         "ma": {
           "score": 0,
@@ -1523,73 +1563,6 @@
         "cross": {
           "score": 0,
           "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 58 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 61% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 1142000.0,
-        "risk_to_stop_pct": 26.75,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": false,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 1578900.0,
-        "SMA60": 779425.0,
-        "SMA120": 456427.5,
-        "RSI": 57.7,
-        "52w_high": 2417000.0,
-        "52w_low": 195400.0
-      }
-    },
-    {
-      "ticker": "373220",
-      "name": "LG에너지솔루션",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 403000.0,
-      "week_return_pct": 9.21,
-      "score_total": 1,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": -1,
-          "note": "최근 8주 내 20/60주선 데드크로스"
         },
         "macd": {
           "score": 1,
@@ -1601,11 +1574,11 @@
         },
         "bb": {
           "score": 0,
-          "note": "밴드 내 정상 범위"
+          "note": "밴드 스퀴즈(변동성 응축) — 방향 분출 대기"
         },
         "vol": {
-          "score": 0,
-          "note": "거래량 평이"
+          "score": 1,
+          "note": "상승 주에 거래량 20주 평균 1.5배 이상"
         },
         "pos52": {
           "score": 0,
@@ -1631,8 +1604,8 @@
       "trade": {
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
-        "stop_13w": 326000.0,
-        "risk_to_stop_pct": 19.11,
+        "stop_13w": 328000.0,
+        "risk_to_stop_pct": 18.71,
         "trend_10_40": "데드",
         "market_filter": true,
         "template": false,
@@ -1641,89 +1614,22 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 366850.0,
-        "SMA60": 391950.0,
-        "SMA120": 372216.67,
-        "RSI": 55.3,
+        "SMA20": 364125.0,
+        "SMA60": 392550.0,
+        "SMA120": 372858.33,
+        "RSI": 55.4,
         "52w_high": 527000.0,
         "52w_low": 290500.0
       }
     },
     {
-      "ticker": "005380",
-      "name": "현대차",
+      "ticker": "009150",
+      "name": "삼성전기",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 324500.0,
-      "week_return_pct": -6.48,
-      "score_total": -1,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 0,
-          "note": "MACD 중립/전환 구간"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 36 중립~약세 영역"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": -1,
-          "note": "52주 밴드 하단 19% 위치 (신저가권)"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "NEUTRAL",
-        "note": "신호 없음 — 관망",
-        "stop_13w": 347000.0,
-        "risk_to_stop_pct": -6.93,
-        "trend_10_40": "데드",
-        "market_filter": true,
-        "template": false,
-        "stage": 4,
-        "stage_label": "스테이지4 하락"
-      },
-      "chart": null,
-      "levels": {
-        "SMA20": 455550.0,
-        "SMA60": 412058.33,
-        "SMA120": 314898.33,
-        "RSI": 35.6,
-        "52w_high": 783000.0,
-        "52w_low": 214000.0
-      }
-    },
-    {
-      "ticker": "105560",
-      "name": "KB금융",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 163400.0,
-      "week_return_pct": -2.97,
+      "last_week": "2026-10-16",
+      "close": 1184000.0,
+      "week_return_pct": -24.05,
       "score_total": -1,
       "verdict": "중립",
       "signals": {
@@ -1741,7 +1647,203 @@
         },
         "rsi": {
           "score": 0,
-          "note": "RSI 49 중립~약세 영역"
+          "note": "RSI 47 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 44% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "상승쐐기",
+          "signal": "추세 피로 주의(약세 반전형)"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 1142000.0,
+        "risk_to_stop_pct": 3.55,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": false,
+        "stage": 1,
+        "stage_label": "스테이지1 바닥권"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 1531750.0,
+        "SMA60": 796580.0,
+        "SMA120": 464977.5,
+        "RSI": 47.2,
+        "52w_high": 2417000.0,
+        "52w_low": 201000.0
+      }
+    },
+    {
+      "ticker": "005380",
+      "name": "현대차",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 314000.0,
+      "week_return_pct": -3.24,
+      "score_total": -1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": 0,
+          "note": "MACD 중립/전환 구간"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 35 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": -1,
+          "note": "52주 밴드 하단 13% 위치 (신저가권)"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 324500.0,
+        "risk_to_stop_pct": -3.34,
+        "trend_10_40": "데드",
+        "market_filter": true,
+        "template": false,
+        "stage": 4,
+        "stage_label": "스테이지4 하락"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 435100.0,
+        "SMA60": 413625.0,
+        "SMA120": 315056.67,
+        "RSI": 34.6,
+        "52w_high": 783000.0,
+        "52w_low": 241500.0
+      }
+    },
+    {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 1291000.0,
+      "week_return_pct": 5.82,
+      "score_total": -2,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": -1,
+          "note": "주가<20주선<60주선 역배열"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 38 중립~약세 영역"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 1,
+          "note": "상승 주에 거래량 20주 평균 1.5배 이상"
+        },
+        "pos52": {
+          "score": -1,
+          "note": "52주 밴드 하단 17% 위치 (신저가권)"
+        }
+      },
+      "patterns": [],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 1220000.0,
+        "risk_to_stop_pct": 5.5,
+        "trend_10_40": "데드",
+        "market_filter": true,
+        "template": false,
+        "stage": 4,
+        "stage_label": "스테이지4 하락"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 1401580.65,
+        "SMA60": 1545273.1,
+        "SMA120": 1511533.25,
+        "RSI": 38.5,
+        "52w_high": 1971704.0,
+        "52w_low": 1150000.0
+      }
+    },
+    {
+      "ticker": "105560",
+      "name": "KB금융",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 160300.0,
+      "week_return_pct": -1.9,
+      "score_total": -1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 47 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -1753,7 +1855,7 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 64% 위치"
+          "note": "52주 밴드 58% 위치"
         }
       },
       "patterns": [
@@ -1773,86 +1875,24 @@
         }
       ],
       "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 164300.0,
-        "risk_to_stop_pct": -0.55,
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 163400.0,
+        "risk_to_stop_pct": -1.93,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
         "stage": 1,
         "stage_label": "스테이지1 바닥권"
       },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/105560_weekly.png",
+      "chart": null,
       "levels": {
-        "SMA20": 168915.0,
-        "SMA60": 146545.0,
-        "SMA120": 118870.83,
-        "RSI": 49.3,
+        "SMA20": 169400.0,
+        "SMA60": 147410.0,
+        "SMA120": 119552.5,
+        "RSI": 47.4,
         "52w_high": 194500.0,
-        "52w_low": 109200.0
-      }
-    },
-    {
-      "ticker": "207940",
-      "name": "삼성바이오로직스",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 1220000.0,
-      "week_return_pct": -10.69,
-      "score_total": -4,
-      "verdict": "약세",
-      "signals": {
-        "ma": {
-          "score": -1,
-          "note": "주가<20주선<60주선 역배열"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": -1,
-          "note": "MACD 시그널 하회 + 히스토그램 감소"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 31 중립~약세 영역"
-        },
-        "bb": {
-          "score": -1,
-          "note": "볼린저 하단 이탈"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": -1,
-          "note": "52주 밴드 하단 0% 위치 (신저가권)"
-        }
-      },
-      "patterns": [],
-      "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 1362430.0,
-        "risk_to_stop_pct": -11.67,
-        "trend_10_40": "데드",
-        "market_filter": true,
-        "template": false,
-        "stage": 4,
-        "stage_label": "스테이지4 하락"
-      },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/207940_weekly.png",
-      "levels": {
-        "SMA20": 1404656.05,
-        "SMA60": 1548826.88,
-        "SMA120": 1509622.59,
-        "RSI": 31.0,
-        "52w_high": 1971704.0,
-        "52w_low": 1218000.0
+        "52w_low": 113000.0
       }
     },
     {
@@ -1860,9 +1900,9 @@
       "name": "삼성생명",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 270000.0,
-      "week_return_pct": -6.25,
+      "last_week": "2026-10-16",
+      "close": 238000.0,
+      "week_return_pct": -11.85,
       "score_total": -1,
       "verdict": "중립",
       "signals": {
@@ -1880,7 +1920,7 @@
         },
         "rsi": {
           "score": 0,
-          "note": "RSI 45 중립~약세 영역"
+          "note": "RSI 40 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -1892,151 +1932,7 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 34% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 275500.0,
-        "risk_to_stop_pct": -2.04,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": false,
-        "stage": 1,
-        "stage_label": "스테이지1 바닥권"
-      },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/032830_weekly.png",
-      "levels": {
-        "SMA20": 337825.0,
-        "SMA60": 240576.67,
-        "SMA120": 169736.67,
-        "RSI": 45.0,
-        "52w_high": 516500.0,
-        "52w_low": 144000.0
-      }
-    },
-    {
-      "ticker": "028260",
-      "name": "삼성물산",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 320000.0,
-      "week_return_pct": -7.78,
-      "score_total": -1,
-      "verdict": "중립",
-      "signals": {
-        "ma": {
-          "score": 0,
-          "note": "이평선 혼조"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": -1,
-          "note": "MACD 시그널 하회 + 히스토그램 감소"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 43 중립~약세 영역"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 34% 위치"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "쌍바닥",
-          "bottoms": [
-            "2026-01-02",
-            "2026-04-03"
-          ],
-          "neckline": 364000.0,
-          "neckline_broken": false,
-          "status": "형성 중(넥라인 미돌파, 접근 중)"
-        },
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 336500.0,
-        "risk_to_stop_pct": -5.16,
-        "trend_10_40": "골든",
-        "market_filter": true,
-        "template": false,
-        "stage": 1,
-        "stage_label": "스테이지1 바닥권"
-      },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/028260_weekly.png",
-      "levels": {
-        "SMA20": 388725.0,
-        "SMA60": 305118.33,
-        "SMA120": 220811.67,
-        "RSI": 43.4,
-        "52w_high": 565000.0,
-        "52w_low": 193300.0
-      }
-    },
-    {
-      "ticker": "034020",
-      "name": "두산에너빌리티",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 76700.0,
-      "week_return_pct": -5.77,
-      "score_total": -3,
-      "verdict": "약세",
-      "signals": {
-        "ma": {
-          "score": -1,
-          "note": "주가<20주선<60주선 역배열"
-        },
-        "cross": {
-          "score": -1,
-          "note": "최근 8주 내 20/60주선 데드크로스"
-        },
-        "macd": {
-          "score": -1,
-          "note": "MACD 시그널 하회 + 히스토그램 감소"
-        },
-        "rsi": {
-          "score": 0,
-          "note": "RSI 45 중립~약세 영역"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 내 정상 범위"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 24% 위치"
+          "note": "52주 밴드 25% 위치"
         }
       },
       "patterns": [
@@ -2048,32 +1944,32 @@
       "trade": {
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
-        "stop_13w": 67100.0,
-        "risk_to_stop_pct": 12.52,
-        "trend_10_40": "데드",
+        "stop_13w": 270000.0,
+        "risk_to_stop_pct": -13.45,
+        "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
-        "stage": 4,
-        "stage_label": "스테이지4 하락"
+        "stage": 1,
+        "stage_label": "스테이지1 바닥권"
       },
       "chart": null,
       "levels": {
-        "SMA20": 83210.0,
-        "SMA60": 86643.33,
-        "SMA120": 58110.33,
-        "RSI": 44.7,
-        "52w_high": 139200.0,
-        "52w_low": 57000.0
+        "SMA20": 330300.0,
+        "SMA60": 242220.0,
+        "SMA120": 170982.5,
+        "RSI": 40.4,
+        "52w_high": 516500.0,
+        "52w_low": 144000.0
       }
     },
     {
-      "ticker": "055550",
-      "name": "신한지주",
+      "ticker": "028260",
+      "name": "삼성물산",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 100000.0,
-      "week_return_pct": -5.57,
+      "last_week": "2026-10-16",
+      "close": 284000.0,
+      "week_return_pct": -11.25,
       "score_total": -1,
       "verdict": "중립",
       "signals": {
@@ -2091,11 +1987,11 @@
         },
         "rsi": {
           "score": 0,
-          "note": "RSI 48 중립~약세 영역"
+          "note": "RSI 39 중립~약세 영역"
         },
         "bb": {
           "score": 0,
-          "note": "밴드 스퀴즈(변동성 응축) — 방향 분출 대기"
+          "note": "밴드 내 정상 범위"
         },
         "vol": {
           "score": 0,
@@ -2103,44 +1999,34 @@
         },
         "pos52": {
           "score": 0,
-          "note": "52주 밴드 66% 위치"
+          "note": "52주 밴드 23% 위치"
         }
       },
       "patterns": [
         {
-          "pattern": "쌍바닥",
-          "bottoms": [
-            "2026-05-29",
-            "2026-06-26"
-          ],
-          "neckline": 110800.0,
-          "neckline_broken": false,
-          "status": "형성 중(넥라인 미돌파, 접근 중)"
-        },
-        {
-          "pattern": "상승쐐기",
-          "signal": "추세 피로 주의(약세 반전형)"
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
         }
       ],
       "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 100700.0,
-        "risk_to_stop_pct": -0.7,
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 320000.0,
+        "risk_to_stop_pct": -12.68,
         "trend_10_40": "골든",
         "market_filter": true,
         "template": false,
         "stage": 1,
         "stage_label": "스테이지1 바닥권"
       },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/055550_weekly.png",
+      "chart": null,
       "levels": {
-        "SMA20": 105210.0,
-        "SMA60": 90806.67,
-        "SMA120": 72633.33,
-        "RSI": 47.6,
-        "52w_high": 116500.0,
-        "52w_low": 68100.0
+        "SMA20": 381300.0,
+        "SMA60": 307065.0,
+        "SMA120": 221995.0,
+        "RSI": 38.5,
+        "52w_high": 565000.0,
+        "52w_low": 200500.0
       }
     },
     {
@@ -2148,9 +2034,9 @@
       "name": "한화에어로스페이스",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 904000.0,
-      "week_return_pct": -15.43,
+      "last_week": "2026-10-16",
+      "close": 900000.0,
+      "week_return_pct": -0.44,
       "score_total": -4,
       "verdict": "약세",
       "signals": {
@@ -2180,74 +2066,7 @@
         },
         "pos52": {
           "score": -1,
-          "note": "52주 밴드 하단 14% 위치 (신저가권)"
-        }
-      },
-      "patterns": [
-        {
-          "pattern": "하락쐐기",
-          "signal": "다이버전스 미확인"
-        }
-      ],
-      "trade": {
-        "status": "EXIT",
-        "note": "청산 신호: 13주 저가 이탈",
-        "stop_13w": 917000.0,
-        "risk_to_stop_pct": -1.44,
-        "trend_10_40": "데드",
-        "market_filter": true,
-        "template": false,
-        "stage": 4,
-        "stage_label": "스테이지4 하락"
-      },
-      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/012450_weekly.png",
-      "levels": {
-        "SMA20": 1057250.0,
-        "SMA60": 1109400.0,
-        "SMA120": 823979.32,
-        "RSI": 40.9,
-        "52w_high": 1655000.0,
-        "52w_low": 783000.0
-      }
-    },
-    {
-      "ticker": "006400",
-      "name": "삼성SDI",
-      "market": "KR",
-      "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 567000.0,
-      "week_return_pct": 7.18,
-      "score_total": 3,
-      "verdict": "강세",
-      "signals": {
-        "ma": {
-          "score": 1,
-          "note": "주가>20주선>60주선 정배열"
-        },
-        "cross": {
-          "score": 0,
-          "note": "최근 이평선 교차 없음"
-        },
-        "macd": {
-          "score": 1,
-          "note": "MACD 시그널 상회 + 히스토그램 증가"
-        },
-        "rsi": {
-          "score": 1,
-          "note": "RSI 58 강세 영역(50 상회)"
-        },
-        "bb": {
-          "score": 0,
-          "note": "밴드 스퀴즈(변동성 응축) — 방향 분출 대기"
-        },
-        "vol": {
-          "score": 0,
-          "note": "거래량 평이"
-        },
-        "pos52": {
-          "score": 0,
-          "note": "52주 밴드 70% 위치"
+          "note": "52주 밴드 하단 13% 위치 (신저가권)"
         }
       },
       "patterns": [
@@ -2259,22 +2078,22 @@
       "trade": {
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
-        "stop_13w": 397000.0,
-        "risk_to_stop_pct": 29.98,
-        "trend_10_40": "골든",
+        "stop_13w": 904000.0,
+        "risk_to_stop_pct": -0.44,
+        "trend_10_40": "데드",
         "market_filter": true,
-        "template": true,
-        "stage": 2,
-        "stage_label": "스테이지2 상승"
+        "template": false,
+        "stage": 4,
+        "stage_label": "스테이지4 하락"
       },
-      "chart": null,
+      "chart": "/home/runner/work/stock-weekly/stock-weekly/charts/012450_weekly.png",
       "levels": {
-        "SMA20": 512100.0,
-        "SMA60": 410708.33,
-        "SMA120": 329894.17,
-        "RSI": 57.7,
-        "52w_high": 723000.0,
-        "52w_low": 201500.0
+        "SMA20": 1043600.0,
+        "SMA60": 1109550.0,
+        "SMA120": 829361.37,
+        "RSI": 40.8,
+        "52w_high": 1655000.0,
+        "52w_low": 783000.0
       }
     },
     {
@@ -2282,9 +2101,138 @@
       "name": "셀트리온",
       "market": "KR",
       "kind": "stock",
-      "last_week": "2026-10-09",
-      "close": 179000.0,
-      "week_return_pct": -1.97,
+      "last_week": "2026-10-16",
+      "close": 193900.0,
+      "week_return_pct": 8.32,
+      "score_total": 1,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": -1,
+          "note": "최근 8주 내 20/60주선 데드크로스"
+        },
+        "macd": {
+          "score": 1,
+          "note": "MACD 시그널 상회 + 히스토그램 증가"
+        },
+        "rsi": {
+          "score": 1,
+          "note": "RSI 55 강세 영역(50 상회)"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 내 정상 범위"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 44% 위치"
+        }
+      },
+      "patterns": [],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 175800.0,
+        "risk_to_stop_pct": 9.33,
+        "trend_10_40": "데드",
+        "market_filter": true,
+        "template": false,
+        "stage": 3,
+        "stage_label": "스테이지3 천장권"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 182140.0,
+        "SMA60": 184815.27,
+        "SMA120": 173905.04,
+        "RSI": 55.4,
+        "52w_high": 239244.0,
+        "52w_low": 158500.0
+      }
+    },
+    {
+      "ticker": "055550",
+      "name": "신한지주",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 93800.0,
+      "week_return_pct": -6.2,
+      "score_total": -2,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 0,
+          "note": "이평선 혼조"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 0,
+          "note": "RSI 42 중립~약세 영역"
+        },
+        "bb": {
+          "score": -1,
+          "note": "볼린저 하단 이탈"
+        },
+        "vol": {
+          "score": 0,
+          "note": "거래량 평이"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 49% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "상승쐐기",
+          "signal": "추세 피로 주의(약세 반전형)"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 100000.0,
+        "risk_to_stop_pct": -6.61,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": false,
+        "stage": 1,
+        "stage_label": "스테이지1 바닥권"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 105220.0,
+        "SMA60": 91258.33,
+        "SMA120": 73013.75,
+        "RSI": 42.4,
+        "52w_high": 116500.0,
+        "52w_low": 72100.0
+      }
+    },
+    {
+      "ticker": "000270",
+      "name": "기아",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 110900.0,
+      "week_return_pct": 3.64,
       "score_total": -3,
       "verdict": "약세",
       "signals": {
@@ -2297,12 +2245,12 @@
           "note": "최근 8주 내 20/60주선 데드크로스"
         },
         "macd": {
-          "score": -1,
-          "note": "MACD 시그널 하회 + 히스토그램 감소"
+          "score": 0,
+          "note": "MACD 중립/전환 구간"
         },
         "rsi": {
           "score": 0,
-          "note": "RSI 46 중립~약세 영역"
+          "note": "RSI 36 중립~약세 영역"
         },
         "bb": {
           "score": 0,
@@ -2313,16 +2261,21 @@
           "note": "거래량 평이"
         },
         "pos52": {
-          "score": 0,
-          "note": "52주 밴드 25% 위치"
+          "score": -1,
+          "note": "52주 밴드 하단 8% 위치 (신저가권)"
         }
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
       "trade": {
         "status": "NEUTRAL",
         "note": "신호 없음 — 관망",
-        "stop_13w": 175200.0,
-        "risk_to_stop_pct": 2.12,
+        "stop_13w": 107000.0,
+        "risk_to_stop_pct": 3.52,
         "trend_10_40": "데드",
         "market_filter": true,
         "template": false,
@@ -2331,12 +2284,79 @@
       },
       "chart": null,
       "levels": {
-        "SMA20": 181638.25,
-        "SMA60": 184344.6,
-        "SMA120": 173562.85,
-        "RSI": 46.1,
-        "52w_high": 239244.0,
-        "52w_low": 158500.0
+        "SMA20": 134360.0,
+        "SMA60": 136665.0,
+        "SMA120": 117812.5,
+        "RSI": 36.1,
+        "52w_high": 212500.0,
+        "52w_low": 102600.0
+      }
+    },
+    {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "market": "KR",
+      "kind": "stock",
+      "last_week": "2026-10-16",
+      "close": 530000.0,
+      "week_return_pct": -6.53,
+      "score_total": 0,
+      "verdict": "중립",
+      "signals": {
+        "ma": {
+          "score": 1,
+          "note": "주가>20주선>60주선 정배열"
+        },
+        "cross": {
+          "score": 0,
+          "note": "최근 이평선 교차 없음"
+        },
+        "macd": {
+          "score": -1,
+          "note": "MACD 시그널 하회 + 히스토그램 감소"
+        },
+        "rsi": {
+          "score": 1,
+          "note": "RSI 53 강세 영역(50 상회)"
+        },
+        "bb": {
+          "score": 0,
+          "note": "밴드 스퀴즈(변동성 응축) — 방향 분출 대기"
+        },
+        "vol": {
+          "score": -1,
+          "note": "하락 주에 거래량 급증"
+        },
+        "pos52": {
+          "score": 0,
+          "note": "52주 밴드 59% 위치"
+        }
+      },
+      "patterns": [
+        {
+          "pattern": "하락쐐기",
+          "signal": "다이버전스 미확인"
+        }
+      ],
+      "trade": {
+        "status": "NEUTRAL",
+        "note": "신호 없음 — 관망",
+        "stop_13w": 397000.0,
+        "risk_to_stop_pct": 25.09,
+        "trend_10_40": "골든",
+        "market_filter": true,
+        "template": false,
+        "stage": 2,
+        "stage_label": "스테이지2 상승"
+      },
+      "chart": null,
+      "levels": {
+        "SMA20": 504200.0,
+        "SMA60": 415941.67,
+        "SMA120": 331422.7,
+        "RSI": 53.1,
+        "52w_high": 723000.0,
+        "52w_low": 248000.0
       }
     }
   ]
